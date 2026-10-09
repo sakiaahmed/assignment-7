@@ -1,26 +1,41 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "bazar";
+  default: true;
+  color-scheme: light;
+  --color-primary: #0a8a45;
+  --color-primary-content: #ffffff;
+  --color-base-100: #ffffff;
+  --color-base-200: #f1f5f1;
+  --color-base-300: #e3e9e3;
+  --color-base-content: #111a14;
+  --radius-field: 0.5rem;
+  --radius-box: 0.75rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-brand: #0a8a45;
+  --color-brand-dark: #07703a;
+  --color-surface: #f1f5f1;
+  --color-line: #e3e9e3;
+  --color-up: #dc2626;
+  --color-down: #0a8a45;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+body { background: var(--color-surface); color: #111a14; font-family: var(--font-hind), var(--font-emoji), system-ui, sans-serif; }
+html { scroll-behavior: smooth; scroll-padding-top: 9rem; }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 70s linear infinite;
+}
+.marquee:hover .marquee-track { animation-play-state: paused; }
+
+.sk { background: #e3e9e3; border-radius: 0.5rem; animation: pulse 1.5s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: 0.45; } }
