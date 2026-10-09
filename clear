@@ -1,0 +1,12 @@
+[33m19b5e89[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m chore: final cleanup
+[33m3928946[m docs: add project README
+[33m70f80de[m feat: profile page and update name feature
+[33m4a7f076[m feat: protected product details page with market price table
+[33mc5da973[m feat: sign in and sign up pages with toast notifications
+[33m820e0f1[m feat: better-auth setup with email, google and github login
+[33m37a586f[m feat: category page with sorting, skeleton loading and 404 page
+[33ma796653[m feat: home page hero, risers, fallers and all products with sort
+[33m6f26015[m feat: navbar with category links, price ticker and footer
+[33me475817[m feat: theme, global styles and api helpers with Bangla formatting
+[33m27a93d7[m chore: install better-auth, mongodb, daisyui and react-hot-toast
+[33mdbf79c6[m Initial commit from Create Next App
