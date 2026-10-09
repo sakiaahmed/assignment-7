@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  বাজার দর (BazarDor)
 
-## Getting Started
+বাংলাদেশের প্রয়োজনীয় পণ্যের (চাল, ডাল, তেল, সবজি, মাছ, মাংস, ডিম-দুধ, মসলা) আজকের দাম, দামের ওঠানামা এবং বাজারভিত্তিক তুলনা এক নজরে দেখার একটি responsive ওয়েব অ্যাপ।
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+##  Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js** (App Router) + **TypeScript**
+- **Tailwind CSS** + **daisyUI**
+- **Better Auth** (Email/Password, Google, GitHub)
+- **MongoDB Atlas**
+- **react-hot-toast**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+##  Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  **Live price ticker:** infinite scrolling strip with emoji, name, price and ▲/▼ change, below a responsive navbar with Bangla date.
+2.  **Daily movers:** top 6 products whose price rose and top 6 whose price fell today.
+3.  **Category pages with sorting:** skeleton loading, an empty/404 state, and a sort dropdown that compares real numeric values (works correctly with Bengali digits).
+4.  **Authentication:** sign in / sign up with email and password, plus Google and GitHub login, with toast notifications and protected routes.
+5.  **Market-wise price table:** minimum, maximum and average price for each product across different bazaars.
+6.  **Profile management:** view your profile and update your name.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
