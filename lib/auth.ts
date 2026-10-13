@@ -13,11 +13,17 @@ export const auth = betterAuth({
   baseURL: process.env.BETTER_AUTH_URL,
   trustedOrigins: [
     "http://localhost:3000",
-    "https://assignment7-teal.vercel.app",
+    "https://assignment-7-weld-eight.vercel.app",
     "https://*.vercel.app",
   ],
   database: mongodbAdapter(db),
   emailAndPassword: { enabled: true, autoSignIn: false, minPasswordLength: 8 },
+  account: {
+    accountLinking: {
+      enabled: true,
+      trustedProviders: ['google', 'github'],
+    },
+  },
   socialProviders: {
     google: {
       clientId: process.env.GOOGLE_CLIENT_ID as string,
